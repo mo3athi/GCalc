@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/gdialog"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/pdlg_space_1.0x"
+      android:padding="10dp"
+      android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <android.support.design.widget.TextInputEditText
+          android:id="@+id/etName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:autoText="true"
+          android:gravity="center"
+          android:hint="Course name"
+          android:inputType="textShortMessage|textVisiblePassword"/>
+      </android.support.design.widget.TextInputLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:gravity="center">
+
+          <android.support.design.widget.TextInputEditText
+            android:id="@+id/etGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Grade"
+            android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:gravity="center">
+
+          <android.support.design.widget.TextInputEditText
+            android:id="@+id/etHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Hours"
+            android:inputType="textAutoComplete|number"/>
+        </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <CheckBox
+          android:id="@+id/isRepeated"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="Repeated"/>
+
+        <android.support.design.widget.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:gravity="center">
+
+          <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Previous Grade"
+            android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
